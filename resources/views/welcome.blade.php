@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>XENOX FX</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{url('/bootstrap/bootstrap.css')}}">
     <link rel="stylesheet" href="{{url('/css/welcome.css')}}">
@@ -12,14 +11,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <title>XENOX FX</title>
 </head>
 
 <body>
-    <div class="scroll-to-top">
-        <span class="scroll-icon">
-            <i class="fa fa-rocket" aria-hidden="true"></i>
-        </span>
-    </div>
     <div class="full-wh">
         <div class="bg-animation">
             <div id='stars'></div>
@@ -33,10 +28,10 @@
             <div class="header__bottom">
                 <div class="container">
                     <nav class="navbar navbar-expand-xl p-0 align-items-center">
-                        <a class="site-logo site-title" href="https://xenoxfx.com"><img
+                        <a class="site-logo site-title" href="/"><img
                                 src="{{url('/images/logo.png')}}" alt="site-logo"></a>
                         <ul class="account-menu responsive-account-menu ml-3">
-                            <li class="icon"><a href="https://xenoxfx.com/login"><i class="fa fa-user"></i></a></li>
+                            <li class="icon"><a href="/signin"><i class="fa fa-user"></i></a></li>
                         </ul>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -45,15 +40,15 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav main-menu ml-auto">
-                                <li> <a href="https://xenoxfx.com">Home</a></li>
-                                <li><a href="https://xenoxfx.com/plan">Plan</a></li>
-                                <li><a href="https://xenoxfx.com/about">About</a></li>
-                                <li><a href="https://xenoxfx.com/blog">Blog</a></li>
-                                <li><a href="https://xenoxfx.com/contact">Contact</a></li>
+                                <li> <a href="/">Home</a></li>
+                                <li><a href="/plan">Plan</a></li>
+                                <li><a href="/about">About</a></li>
+                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="/contact">Contact</a></li>
                             </ul>
                             <div class="nav-right">
                                 <ul class="account-menu ml-3">
-                                    <li class="icon"><a href="https://xenoxfx.com/login"><i class="fa fa-user"></i></a>
+                                    <li class="icon"><a href="/signin"><i class="fa fa-user"></i></a>
                                     </li>
                                 </ul>
                                 <select class="select d-inline-block w-auto ml-xl-3 langSel">
@@ -81,7 +76,7 @@
                                 Reliable Company. We provide you with the most necessary features that will make your
                                 experience better. Not only we guarantee the fastest and the most exciting returns on
                                 your investments, but we also guarantee the security of your investment.</p>
-                            <a href="register" class="cmn-btn text-uppercase font-weight-600 mt-4">Sign Up</a>
+                            <a href="/register" class="cmn-btn text-uppercase font-weight-600 mt-4">Sign Up</a>
                         </div>
                     </div>
                 </div>
@@ -106,7 +101,7 @@
                                 towards increasing your profit margin by profitable investment. We look forward to you
                                 being part of our community.
                             </p>
-                            <a href="about" class="cmn-btn mt-4">More Info</a>
+                            <a href="/about" class="cmn-btn mt-4">More Info</a>
                         </div>
                     </div>
                 </div>
@@ -140,7 +135,7 @@
                             </ul>
                             <div class="package-card__range mt-5 base--color"> $200000 - $500000
                             </div>
-                            <a href="javascript:void(0)" data-toggle="modal" data-target="#depoModal"
+                            <a href="" data-toggle="modal" data-target="#depoModal"
                                 class="cmn-btn btn-md mt-4 investButton">Invest Now</a>
                         </div>
                     </div>
@@ -160,7 +155,7 @@
                             </ul>
                             <div class="package-card__range mt-5 base--color"> $155000 - $200000
                             </div>
-                            <a href="javascript:void(0)" data-toggle="modal" data-target="#depoModal"
+                            <a href="" data-toggle="modal" data-target="#depoModal"
                                 class="cmn-btn btn-md mt-4 investButton">Invest Now</a>
                         </div>
                     </div>
@@ -180,7 +175,7 @@
                             </ul>
                             <div class="package-card__range mt-5 base--color"> $80000 - $150000
                             </div>
-                            <a href="javascript:void(0)" data-toggle="modal" data-target="#depoModal"
+                            <a href="" data-toggle="modal" data-target="#depoModal"
                                 class="cmn-btn btn-md mt-4 investButton">Invest Now</a>
                         </div>
                     </div>
@@ -201,7 +196,7 @@
                             </ul>
                             <div class="package-card__range mt-5 base--color"> $11000 - $50000
                             </div>
-                            <a href="javascript:void(0)" data-toggle="modal" data-target="#depoModal"
+                            <a href="" data-toggle="modal" data-target="#depoModal"
                                 class="cmn-btn btn-md mt-4 investButton">Invest Now</a>
                         </div>
                     </div>
@@ -222,7 +217,7 @@
                             </ul>
                             <div class="package-card__range mt-5 base--color"> $3000 - $10000
                             </div>
-                            <a href="javascript:void(0)" data-toggle="modal" data-target="#depoModal"
+                            <a href="" data-toggle="modal" data-target="#depoModal"
                                 class="cmn-btn btn-md mt-4 investButton">Invest Now</a>
                         </div>
                     </div>
@@ -243,7 +238,7 @@
                             </ul>
                             <div class="package-card__range mt-5 base--color"> $250 - $2900
                             </div>
-                            <a href="javascript:void(0)" data-toggle="modal" data-target="#depoModal"
+                            <a href="" data-toggle="modal" data-target="#depoModal"
                                 class="cmn-btn btn-md mt-4 investButton">Invest Now</a>
                         </div>
                     </div>
@@ -762,7 +757,7 @@
                             <p>This is a Revolutionary Money Making Platform! Invest for Future in Stable Platform and
                                 Make Fast Money. Not only we guarantee the fastest and the most exciting returns on your
                                 investments, but we also guarantee the security of your investment.</p>
-                            <a href="register" class="cmn-btn mt-4">Join Us</a>
+                            <a href="/register" class="cmn-btn mt-4">Join Us</a>
                         </div>
                     </div>
                 </div>
@@ -918,8 +913,8 @@
                                 </div>
                                 <div class="col-lg-7 mt-lg-0 mt-4">
                                     <form class="subscribe-form" method="post">
-                                        <input type="hidden" name="_token"
-                                            value="curnhlUlf0AHUsVCbV8aETvkYiQdgaCx1SUgBQpj"> <input type="email"
+                                        <input type="hidden" name=""
+                                            value=""> <input type="email"
                                             class="form-control" name="email" placeholder="Email Address">
                                         <button type="submit" class="subscribe-btn"><i
                                                 class="fa fa-envelope"></i></button>
@@ -938,12 +933,12 @@
                     <div class="modal-header">
                         <strong class="modal-title text-white" id="ModalLabel">
                             At first sign in your account </strong>
-                        <a href="javascript:void(0)" class="close" data-dismiss="modal" aria-label="Close">
+                        <a href="" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </a>
                     </div>
                     <form action="" method="post" class="register">
-                        <input type="hidden" name="_token" value="curnhlUlf0AHUsVCbV8aETvkYiQdgaCx1SUgBQpj">
+                        <input type="hidden" name="" value="">
                         <div class="modal-footer">
                             <a href="" type="button"
                                 class="btn btn-success custom-success w-100">At first sign in your account</a>
@@ -962,8 +957,8 @@
                             <a href=""><img src="{{url('/images/logo.png')}}"
                                     alt="image"></a>
                             <ul class="footer-short-menu d-flex flex-wrap justify-content-center mt-3">
-                                <li><a href="">Privacy Policy</a></li>
-                                <li><a href="">Terms &amp;
+                                <li><a href="/dashboard/privacy">Privacy Policy</a></li>
+                                <li><a href="/dashboard/terms">Terms &amp;
                                         Condition</a></li>
                             </ul>
                         </div>
@@ -975,16 +970,16 @@
                     <div class="row">
                         <div class="col-md-6 text-md-left text-center">
                             <p>
-                            <p>© 2022 <a href="" class="base--color">Xenox FX</a>. All rights
+                            <p>© 2022 <a href="/" class="base--color">Xenox FX</a>. All rights
                                 reserved</p>
                             </p>
                         </div>
                         <div class="col-md-6">
                             <ul class="social-link-list d-flex flex-wrap justify-content-md-end justify-content-center">
-                                <li><a href="https://facebook.com"><i class="fa fa-facebook-f"></i></a></li>
-                                <li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p"></i></a></li>
-                                <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-in"></i></a></li>
+                                <li><a href=""><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa fa-pinterest-p"></i></a></li>
+                                <li><a href=""><i class="fa fa-linkedin-in"></i></a></li>
                             </ul>
                         </div>
                     </div>
